@@ -1,0 +1,182 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.nav-link{
+    font-size: x-large;
+    z-index: 1;
+}
+hr{
+    border: .1px solid #2f2e41;margin: 0px; width: 100%;
+}
+header{
+    background: url('./ic-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.animate-occurX{
+	opacity: 1 !important;
+	transform: translateX(0px)!important;
+}
+.animate-occurY{
+	opacity: 1 !important;
+	transform: translateY(0px)!important;
+}
+.animateX{
+	opacity: 0;
+	transform: translateX(-800px);
+	transition: .5s all ease-out;
+}
+.animateY{
+	opacity: 0;
+	transform: translateY(-100px);
+	transition: .5s all ease-out;
+}
+.animateNX{
+	opacity: 0;
+	transform: translateX(800px);
+	transition: .5s all ease-out;
+}
+.animateNY{
+	opacity: 0;
+	transform: translateY(100px);
+	transition: .5s all ease-out;
+}
+.navbar-toggler{
+    background-color: #fff;
+}
+.color-overlay{
+    width: 100%;
+    height: 90%;
+    background: #000;
+    opacity: .8;
+    position:  absolute;
+    overflow: hidden;
+}
+nav{
+    height: 10%;
+    width: 100%;
+    background: #000;
+    opacity: .8;
+    flex-grow: 1;
+    position: absolute;
+}
+.heading{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+.frontButton{
+    width: fit-content;
+    background-color: #40515c;
+    color: #FFFFFF;
+    height: auto;
+    opacity: 1;
+    clear: both;
+}
+
+.frontButton:hover {
+    transform: scale(1.1); 
+  }
+.abt{
+    max-width: 70%;
+    color: #4a4963;
+    font-size: 1.3em;
+    line-height: 2.2rem;
+}
+.abt2{
+    max-width: 90%;
+    color: #4a4963;
+    font-size: 1.3em;
+    line-height: 2.2rem;
+}
+form{
+    width: 70%;
+}
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    border-radius: 16px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border: 2px solid #DCF0F2;
+  }
+input::placeholder{
+    padding: 4px;
+    text-align: start;
+}
+input[type=text]:focus {
+    border: 2px solid #182126;
+}
+input[type=email]:focus{
+    border: 2px solid #182126;
+}
+.textarea:active{
+    outline: none !important;
+    border: 2px solid #182126;
+}
+.btn:hover{
+    color: white;
+    background-color: #2A3740;
+}
+.hr{
+    width: 75%;
+}
+footer{
+    background-color: #182126;
+    height: 10em;
+}
+.lastBox{
+    flex-direction: row;
+}
+.last{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+@media only screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+    .abt{
+        max-width: 90%;
+    }
+    form{
+        width: 90%;
+    }
+    .abt2{
+        max-width: 90%;
+        color: #4a4963;
+        font-size: larger;
+        line-height: 2.2rem;
+    }
+    .lastBox{
+        flex-direction: column;
+    }
+    footer{
+        height: auto;
+    }
+    .hr{
+        width: 83%;
+    }
+  }
