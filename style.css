@@ -56,7 +56,7 @@ header{
 }
 .color-overlay{
     width: 100%;
-    height: 90%;
+    height: 92%;
     background: #000;
     opacity: .8;
     position:  absolute;
@@ -94,6 +94,9 @@ nav{
     color: #4a4963;
     font-size: 1.3em;
     line-height: 2.2rem;
+}
+.abt3{
+    font-size: x-large;
 }
 .abt2{
     max-width: 90%;
@@ -133,6 +136,10 @@ input[type=email]:focus{
 .hr{
     width: 75%;
 }
+.mainHeading{
+    font-size: 1.7rem; 
+    max-width: 460px;
+}
 footer{
     background-color: #182126;
     height: 10em;
@@ -159,15 +166,19 @@ footer{
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     }
     .abt{
+        font-size: 1.2em;
         max-width: 90%;
     }
     form{
         width: 90%;
     }
+    .abt3{
+        font-size: large;
+    }
     .abt2{
         max-width: 90%;
         color: #4a4963;
-        font-size: larger;
+        font-size: 1.2em;
         line-height: 2.2rem;
     }
     .lastBox{
@@ -178,5 +189,9 @@ footer{
     }
     .hr{
         width: 83%;
+    }
+    .mainHeading{
+        font-size: 1.4rem; 
+        max-width: 100%;
     }
   }

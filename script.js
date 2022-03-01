@@ -62,6 +62,13 @@ function load1(){
         
     });
 }
+function overlay(){
+    if(document.querySelector(".color-overlay").style.height === "71%"){
+        document.querySelector(".color-overlay").style.height = "92%";
+    }else{
+        document.querySelector(".color-overlay").style.height = "71%";
+    }
+}
 function scroll(){
     if (document.body.scrollTop>20  || document.documentElement.scrollTop > 20){
         document.getElementById("last").style.display = "flex";
